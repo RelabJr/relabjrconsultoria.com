@@ -4,6 +4,7 @@ backend:
 
 publish_mode: editorial_workflow # Para fazer um esquema de revisão de novas edições
 media_folder: "public/uploads" # Onde os arquivos de mídia serão armazenados
+public_folder: "/uploads" # Onde a parte de mídia vai poder ser acessada
 
 slug:
   encoding: "ascii"
