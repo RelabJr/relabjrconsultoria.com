@@ -3,6 +3,8 @@ import Image from 'next/image'
 import styles from './footer.module.css'
 import { FaInstagram, FaLinkedin, FaEnvelope } from 'react-icons/fa'
 
+import logoIDE from '../../../public/uploads/img/IDE_logo.png'
+
 
 const handleMove = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -78,6 +80,18 @@ export default function Footer({ contato, footer }) {
             <p className={styles.footerText}>{footer.copy}</p>
           </div>
         </div>
+        <div className={styles.developedBy}>
+            <a className={styles.developedByLink} href="https://idejr.com.br" target='_blank'>
+              <div className={styles.developedByCover}>
+                  <Image
+                    src={logoIDE}
+                    alt="Logo da IDE Jr"
+                    className={styles.ideLogo}
+                  />
+              </div>
+              <p>Desenvolvido por IDE - UFRGS</p>
+            </a>
+          </div>
       </div>
     </>
   );
